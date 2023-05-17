@@ -39,4 +39,31 @@ public class MemberMgr {
         }
         return vlist;
     }
+    public boolean insetMember(MemberBean bean){
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        boolean success  =false;
+
+        try{
+            conn = pool.getConnection();
+            String sql = "insert into member values (?,?,?,?,?)";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, bean.getId());
+            pstmt.setString(2, bean.getPwd());
+            pstmt.setString(3, bean.getName());
+            pstmt.setString(4, bean.getBirthday());
+            pstmt.setString(5, bean.getEmail());
+            int result = pstmt.executeUpdate();
+
+            if(result >0){
+                success = true;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            pool.freeConnection(conn,pstmt);
+        }
+        return success;
+    }
+
 }

@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
-<%
-	request.setCharacterEncoding("UTF-8");
-%>
+
 <jsp:useBean id="regBean" class="mem.MemberBean" />
 <jsp:setProperty name="regBean" property="*" /> 
 <!DOCTYPE html>
