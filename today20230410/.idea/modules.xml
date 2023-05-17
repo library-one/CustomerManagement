@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../t20230423/t20230423.iml" filepath="$PROJECT_DIR$/../t20230423/t20230423.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../today20230403/today20230403.iml" filepath="$PROJECT_DIR$/../today20230403/today20230403.iml" />
+      <module fileurl="file://$PROJECT_DIR$/today202304101.iml" filepath="$PROJECT_DIR$/today202304101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tpday230327/tpday230327.iml" filepath="$PROJECT_DIR$/../tpday230327/tpday230327.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../untitled/untitled.iml" filepath="$PROJECT_DIR$/../untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
